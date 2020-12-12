@@ -179,8 +179,13 @@
     </sensor>
   </gazebo>
 
-
+<!--color in flame-->
   <gazebo reference="flame_left_link">
+<!--    <material>Gazebo/DarkGrey</material>-->
+    <material>Gazebo/Orange</material>
+  </gazebo>
+
+    <gazebo reference="flame_right_link">
 <!--    <material>Gazebo/DarkGrey</material>-->
     <material>Gazebo/Orange</material>
   </gazebo>
