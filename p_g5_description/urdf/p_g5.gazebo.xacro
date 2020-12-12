@@ -180,7 +180,7 @@
   </gazebo>
 
 
-  <gazebo reference="flame_right_link">
+  <gazebo reference="flame_left_link">
 <!--    <material>Gazebo/DarkGrey</material>-->
     <material>Gazebo/Orange</material>
   </gazebo>
