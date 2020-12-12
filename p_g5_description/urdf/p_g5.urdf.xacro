@@ -219,24 +219,24 @@
 
 <!--  acresentar chamas laterais -->
 
-  <joint name="base_link_to_flame_rigth_link" type="fixed">
-    <parent link="base_link"/>
-    <child link="flame_rigth_link"/>
-    <origin xyz="1.0 1 1.023" rpy="2 0 0"/>
-  </joint>
-
   <link name="flame_right_link">
     <visual>
-      <origin xyz="0 0 0" rpy="1.57 0 0"/>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
       <geometry>
-<!--        <mesh filename="package://p_g5_description/mesh/flaming_gear_keychain.stl" scale="0.001 0.001 0.001"/>-->
+        <mesh filename="package://p_g5_description/mesh/flaming_gear_keychain.stl" scale="0.004 0.004 0.01"/>
 <!--        <mesh filename="package://turtlebot3_description/meshes/sensors/lds.stl" scale="0.001 0.001 0.001"/>-->
-        <cylinder length="0.018" radius="0.033"/>
+<!--        <cylinder length="0.018" radius="0.033"/>-->
       </geometry>
-      <material name="dark"/>
-<!--      <material name="orange"/>-->
     </visual>
   </link>
+
+  <joint name="base_link_to_flame_rigth_link" type="fixed">
+    <origin xyz="0 0 0.3" rpy="0 0 0"/>
+    <parent link="base_link"/>
+    <child link="flame_right_link"/>
+    <material name="orange"/>
+  </joint>
+
 
 
 

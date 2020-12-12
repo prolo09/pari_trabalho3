@@ -179,4 +179,10 @@
     </sensor>
   </gazebo>
 
+
+  <gazebo reference="flame_right_link">
+<!--    <material>Gazebo/DarkGrey</material>-->
+    <material>Gazebo/Orange</material>
+  </gazebo>
+
 </robot>
