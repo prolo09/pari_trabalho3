@@ -17,8 +17,8 @@
       <geometry>
         <mesh filename="package://turtlebot3_description/meshes/bases/waffle_pi_base.stl" scale="0.001 0.001 0.001"/>
       </geometry>
-<!--      <material name="light_black"/>-->
-      <material name="orange"/>
+      <material name="light_black"/>
+<!--      <material name="orange"/>-->
     </visual>
 
     <collision>
@@ -50,8 +50,8 @@
       <geometry>
         <mesh filename="package://turtlebot3_description/meshes/wheels/left_tire.stl" scale="0.001 0.001 0.001"/>
       </geometry>
-      <material name="dark"/>
-<!--      <material name="orange"/>-->
+<!--      <material name="dark"/>-->
+      <material name="orange"/>
     </visual>
 
     <collision>
@@ -83,8 +83,8 @@
       <geometry>
         <mesh filename="package://turtlebot3_description/meshes/wheels/right_tire.stl" scale="0.001 0.001 0.001"/>
       </geometry>
-      <material name="dark"/>
-<!--      <material name="orange"/>-->
+<!--      <material name="dark"/>-->
+      <material name="orange"/>
     </visual>
 
     <collision>
