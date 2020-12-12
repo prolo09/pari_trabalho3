@@ -251,7 +251,7 @@
   </link>
 
   <joint name="base_link_to_flame_right_link" type="fixed">
-    <origin xyz="-0.169 -0.12 0.05" rpy="0 0 0"/>
+    <origin xyz="-0.169 -0.12 0.044" rpy="0 0 0"/>
     <parent link="base_link"/>
     <child link="flame_right_link"/>
     <material name="orange"/>
