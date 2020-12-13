@@ -1,11 +1,15 @@
 <?xml version="1.0"?>
-<robot name="turtlebot3_waffle_pi_sim" xmlns:xacro="http://ros.org/wiki/xacro">
+<robot name="p_g5_gaz" xmlns:xacro="http://ros.org/wiki/xacro">
+
+  <xacro:include filename="$(find p_g5_description)/urdf/ros_diff_drive.gazebo.xacro"/>
+
+
   <xacro:arg name="laser_visual"  default="false"/>
   <xacro:arg name="camera_visual" default="false"/>
   <xacro:arg name="imu_visual"    default="false"/>
 
   <gazebo reference="base_link">
-    <material>Gazebo/DarkGrey</material>
+    <material>Gazebo/${base_color}</material>
   </gazebo>
 
   <gazebo reference="wheel_left_link">
@@ -16,7 +20,7 @@
     <minDepth>0.001</minDepth>
     <maxVel>0.1</maxVel>
     <fdir1>1 0 0</fdir1>
-    <material>Gazebo/Orange</material>
+    <material>Gazebo/${player_color}</material>
   </gazebo>
 
   <gazebo reference="wheel_right_link">
@@ -27,8 +31,7 @@
     <minDepth>0.001</minDepth>
     <maxVel>0.1</maxVel>
     <fdir1>1 0 0</fdir1>
-<!--    <material>Gazebo/FlatBlack</material>-->
-    <material>Gazebo/Orange</material>
+   <material>Gazebo/${player_color}</material>
   </gazebo>
 
   <gazebo reference="caster_back_right_link">
@@ -60,7 +63,7 @@
 
   </gazebo>
 
-  <gazebo>
+  <!--<gazebo>
     <plugin name="turtlebot3_waffle_pi_controller" filename="libgazebo_ros_diff_drive.so">
       <commandTopic>cmd_vel</commandTopic>
       <odometryTopic>odom</odometryTopic>
@@ -81,7 +84,7 @@
       <wheelTorque>10</wheelTorque>
       <rosDebugLevel>na</rosDebugLevel>
     </plugin>
-  </gazebo>
+  </gazebo>-->
 
   <gazebo>
     <plugin name="imu_plugin" filename="libgazebo_ros_imu.so">
@@ -113,7 +116,7 @@
   </gazebo>
 
   <gazebo reference="base_scan">
-    <material>Gazebo/FlatBlack</material>
+    <material>Gazebo/${scan_color}</material>
     <sensor type="ray" name="lds_lfcd_sensor">
       <pose>0 0 0 0 0 0</pose>
       <visualize>$(arg laser_visual)</visualize>
@@ -182,12 +185,12 @@
 <!--color in flame-->
   <gazebo reference="flame_left_link">
 <!--    <material>Gazebo/DarkGrey</material>-->
-    <material>Gazebo/Orange</material>
+    <material>Gazebo/${player_color}</material>
   </gazebo>
 
     <gazebo reference="flame_right_link">
 <!--    <material>Gazebo/DarkGrey</material>-->
-    <material>Gazebo/Orange</material>
+    <material>Gazebo/${player_color}</material>
   </gazebo>
 
 </robot>

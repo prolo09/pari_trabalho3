@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<launch>
+   <!-- Launch rviz, loading configuration file -->
+    <node name="rviz" pkg="rviz" type="rviz"
+          args="--display-config $(find p_g5_bringup)/config/viz.rviz" required="false"/>
+</launch>

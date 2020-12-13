@@ -1,7 +1,13 @@
 <?xml version="1.0" ?>
-<robot name="turtlebot3_waffle_pi" xmlns:xacro="http://ros.org/wiki/xacro">
-  <xacro:include filename="$(find turtlebot3_description)/urdf/common_properties.xacro"/>
-  <xacro:include filename="$(find p_g5_description)/urdf/p_g5.gazebo.xacro"/>
+<robot name="$(arg player_name)" xmlns:xacro="http://ros.org/wiki/xacro">
+  <xacro:include filename="$(find p_g5_description)/urdf/common_properties.xacro"/>
+
+  <xacro:property name="player_name" value="$(arg player_name)"/>
+  <xacro:property name="player_color" value="$(arg player_color)"/>
+  <xacro:property name="base_color" value="$(arg base_color)"/>
+  <xacro:property name="scan_color" value="$(arg scan_color)"/>
+
+  <xacro:include filename="$(find p_g5_description)/urdf/p_g5.gazebo.macro.xacro"/>
 
   <link name="base_footprint"/>
 
@@ -17,8 +23,7 @@
       <geometry>
         <mesh filename="package://turtlebot3_description/meshes/bases/waffle_pi_base.stl" scale="0.001 0.001 0.001"/>
       </geometry>
-      <material name="light_black"/>
-<!--      <material name="orange"/>-->
+      <material name="${base_color}"/>
     </visual>
 
     <collision>
@@ -50,8 +55,7 @@
       <geometry>
         <mesh filename="package://turtlebot3_description/meshes/wheels/left_tire.stl" scale="0.001 0.001 0.001"/>
       </geometry>
-<!--      <material name="dark"/>-->
-      <material name="orange"/>
+      <material name="${player_color}"/>
     </visual>
 
     <collision>
@@ -84,7 +88,7 @@
         <mesh filename="package://turtlebot3_description/meshes/wheels/right_tire.stl" scale="0.001 0.001 0.001"/>
       </geometry>
 <!--      <material name="dark"/>-->
-      <material name="orange"/>
+      <material name="${player_color}"/>
     </visual>
 
     <collision>
@@ -169,7 +173,7 @@
       <geometry>
         <mesh filename="package://turtlebot3_description/meshes/sensors/lds.stl" scale="0.001 0.001 0.001"/>
       </geometry>
-      <material name="dark"/>
+      <material name="${scan_color}"/>
     </visual>
 
     <collision>
@@ -225,9 +229,8 @@
       <origin xyz="0 0 0" rpy="0 1.57 1.57"/>
       <geometry>
         <mesh filename="package://p_g5_description/mesh/flaming_gear_keychain.stl" scale="0.002 0.0035 0.005"/>
-<!--        <mesh filename="package://turtlebot3_description/meshes/sensors/lds.stl" scale="0.001 0.001 0.001"/>-->
-<!--        <cylinder length="0.018" radius="0.033"/>-->
       </geometry>
+      <material name="${player_color}"/>
     </visual>
   </link>
 
@@ -235,7 +238,6 @@
     <origin xyz="-0.169 0.12 0.05" rpy="0 0 0"/>
     <parent link="base_link"/>
     <child link="flame_left_link"/>
-    <material name="orange"/>
   </joint>
 
 <!--  chama direita-->
@@ -244,9 +246,8 @@
       <origin xyz="0 0 0" rpy="0 -1.57 1.57"/>
       <geometry>
         <mesh filename="package://p_g5_description/mesh/flaming_gear_keychain.stl" scale="0.002 0.0035 0.005"/>
-<!--        <mesh filename="package://turtlebot3_description/meshes/sensors/lds.stl" scale="0.001 0.001 0.001"/>-->
-<!--        <cylinder length="0.018" radius="0.033"/>-->
       </geometry>
+      <material name="${player_color}"/>
     </visual>
   </link>
 
@@ -254,9 +255,6 @@
     <origin xyz="-0.169 -0.12 0.044" rpy="0 0 0"/>
     <parent link="base_link"/>
     <child link="flame_right_link"/>
-    <material name="orange"/>
   </joint>
-
-
 
 </robot>
