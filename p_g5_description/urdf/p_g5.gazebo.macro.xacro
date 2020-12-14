@@ -1,7 +1,8 @@
 <?xml version="1.0"?>
 <robot name="p_g5_gaz" xmlns:xacro="http://ros.org/wiki/xacro">
 
-  <xacro:include filename="$(find p_g5_description)/urdf/ros_diff_drive.gazebo.xacro"/>
+<!--  <xacro:include filename="$(find p_g5_description)/urdf/ros_diff_drive.gazebo.xacro"/>-->
+  <xacro:include filename="$(find p_g5_description)/urdf/ros_control.gazebo.xacro"/>
 
 
   <xacro:arg name="laser_visual"  default="false"/>

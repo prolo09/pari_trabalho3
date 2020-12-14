@@ -6,8 +6,10 @@
   <arg name="model" default="$(env TURTLEBOT3_MODEL)" doc="model type [burger, waffle, waffle_pi]"/>
   <param name="model" value="$(arg model)"/>
 
-  <!-- turtlebot3_teleop_key already has its own built in velocity smoother -->
-  <node pkg="turtlebot3_teleop" type="turtlebot3_teleop_key" name="turtlebot3_teleop_keyboard"  output="screen">
-  </node>
+<!--  &lt;!&ndash; turtlebot3_teleop_key already has its own built in velocity smoother &ndash;&gt;-->
+<!--  <node pkg="turtlebot3_teleop" type="turtlebot3_teleop_key" name="turtlebot3_teleop_keyboard"  output="screen">-->
+<!--  </node>-->
+  <node ns="differential_drive_controller" pkg="p_g5_bringup" type="turtlebot3_teleop_key" name="turtlebot3_teleop_keyboard"  output="screen"/>
+
   </group>
 </launch>
