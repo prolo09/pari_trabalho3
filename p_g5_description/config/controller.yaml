@@ -2,7 +2,7 @@ differential_drive_controller:
   type        : "diff_drive_controller/DiffDriveController"
   left_wheel  : "wheel_left_joint" # these must match the name of the joints in the URDF
   right_wheel : "wheel_right_joint" # these must match the name of the joints in the URDF
-  publish_rate: 50.0               # default: 50
+  publish_rate: 120.0               # default: 50
   pose_covariance_diagonal : [0.001, 0.001, 1000000.0, 1000000.0, 1000000.0, 1000.0]
   twist_covariance_diagonal: [0.001, 0.001, 1000000.0, 1000000.0, 1000000.0, 1000.0]
 
@@ -32,10 +32,10 @@ differential_drive_controller:
   linear:
     x:
       has_velocity_limits    : true
-      max_velocity           : 5.0  # m/s
+      max_velocity           : 4.0  # m/s
       min_velocity           : -0.2 # m/s
       has_acceleration_limits: true
-      max_acceleration       : 0.5  # m/s^2
+      max_acceleration       : 1.5  # m/s^2
       min_acceleration       : -0.5 # m/s^2
       has_jerk_limits        : true
       max_jerk               : 5.0  # m/s^3
@@ -44,11 +44,11 @@ differential_drive_controller:
       has_velocity_limits    : true
       max_velocity           : 1.7  # rad/s
       has_acceleration_limits: true
-      max_acceleration       : 1.5  # rad/s^2
+      max_acceleration       : 1.0  # rad/s^2
       has_jerk_limits        : true
-      max_jerk               : 2.5  # rad/s^3
+      max_jerk               : 1.5  # rad/s^3
 
 # add by me
 joint_state_controller:
   type: joint_state_controller/JointStateController
-  publish_rate: 50
+  publish_rate: 120
