@@ -3,7 +3,7 @@
 <robot name="xacro_properties" xmlns:xacro="http://ros.org/wiki/xacro">
 
   <!-- Init colour -->  
-  <material name="black">
+  <material name="Black">
       <color rgba="0.0 0.0 0.0 1.0"/>
   </material>
 
@@ -14,7 +14,7 @@
   <material name="FlatBlack">
     <color rgba="0.05 0.05 0.05 1.0"/>
   </material>
-  <material name="light_black">
+  <material name="LightBlack">
     <color rgba="0.4 0.4 0.4 1.0"/>
   </material>
 
@@ -34,21 +34,15 @@
     <color rgba="${255/255} ${108/255} ${10/255} 1.0"/>
   </material>
 
-  <material name="brown">
+  <material name="Brown">
     <color rgba="${222/255} ${207/255} ${195/255} 1.0"/>
   </material>
 
-  <material name="red">
-    <color rgba="0.8 0.0 0.0 1.0"/>
-  </material>
 
     <material name="Red">
     <color rgba="0.8 0.0 0.0 1.0"/>
   </material>
 
-  <material name="white">
-    <color rgba="1.0 1.0 1.0 1.0"/>
-  </material>
 
     <material name="White">
     <color rgba="1.0 1.0 1.0 1.0"/>
