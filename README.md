@@ -69,8 +69,15 @@ Se utilizar esta segunda via, certifique-se que tem o joy instalado, através do
         
      sudo apt install ros-<ros-distro>joy
         
+Pode se ainda optar por controlar o robot através do telemóvel, para isso e necessário instalar a aplicação ROS Control.
+Depois de instalada devesse adicionar um novo Robot na aplicação e atribuir um nome e substituir o localhost pelo IP do computador e assim temos a ligação estabelecida. 
+Em seguida deve clicar em Show Advanced Options, e substituir o nome dos tópicos para os tópicos que queremos alterar os valores, neste caso para podemos controlar pelo joystick, colocamos o topic: /p_g5/differential_drive_controller/cmd_vel 
 
+![Real Image](docs/rosapp.jpg)
         
+Depois de configorar os topicos é so clicar no nomo Robot pode controlar com o joystick, com mostra a imaguem, que os topicos seram enviados
+
+![Real Image](docs/demoRosApp.jpg)
         
       
     
