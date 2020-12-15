@@ -18,7 +18,7 @@ Este último package apenas contém informação de um world que poderá ser uti
 # Criação do ambiente simulado
 Após obter estes packages pode começar a criar o cenário para o seu robot. Abra um terminal e introduza:
         
-        roslaunch p_g5_bringup bringup_gazebo.launch
+    roslaunch p_g5_bringup bringup_gazebo.launch
 
 Este comando fará despoletar o simulador gazebo, já carregado com a casa do turtle bot ou outra, dependendo do world escolhido no package: **p_g5_bringup**, launch:**bringup_gazebo**.
 
@@ -59,15 +59,15 @@ Tendo agora todos os ambientes gráficos criados pode-se finalmente criar o noss
 # Comando do robot
 Agora para comandar o robot podemos usar o controlador do ROS. Para tal podemos usar este comando no terminal:
     
-        roslaunch p_g5_bringup teleop.launch player_name:=[nome]
+     roslaunch p_g5_bringup teleop.launch player_name:=[nome]
         
 No entanto,se não for um fã de Counter Strike e tiver um comando USB à sua disposição, pode introduzir o seguinte comando ao invés do anterior:
 
-       rosrun teleop_twist_joy teleop_node /cmd_vel:=/<player_name>/differential_drive_controller/cmd_vel
+     rosrun teleop_twist_joy teleop_node /cmd_vel:=/<player_name>/differential_drive_controller/cmd_vel
        
 Se utilizar esta segunda via, certifique-se que tem o joy instalado, através do seguinte comando:
         
-        sudo apt install ros-<ros-distro>joy
+     sudo apt install ros-<ros-distro>joy
         
 
         
