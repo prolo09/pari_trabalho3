@@ -1,7 +1,7 @@
-# Turtlebot3 first steps
-###### Trabalho 3 da unidade curricular de projecto de automação e robótica do curso de engenharía mecânica da universidade de aveiro
+# Turtlebot3 Race
+###### Trabalho 3 da unidade curricular de projecto de automação e robótica industrial (PARI) do curso de Engenharía Mecânica da Universidade de Aveiro
 
-#Indice
+# Indice
  - [Instalação](#instalação)
  - [Gazebo](#criação-do-ambiente-simulado)
  - [Rviz](#visualização-rviz)
@@ -24,7 +24,7 @@ Este comando fará despoletar o simulador gazebo, já carregado com a casa do tu
 
        
 # Visualização Rviz
-Apos se ter usado o simulador gazebo é possivel tambem usar o Rviz, software de vizualização 3d, que permitirá ver as
+Após se ter usado o simulador gazebo é possivel tambem usar o Rviz, software de vizualização 3d, que permitirá ver as
 imagens captadas pelo robot, laser scan captados pelo robot, tranformações captadas pelo robo, etc... basicamente
 pode fazer a amostragem dos dados. Para tal abrir o terminal e digitar:
 
