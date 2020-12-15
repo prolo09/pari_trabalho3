@@ -63,11 +63,11 @@ Agora para comandar o robot podemos usar o controlador do ROS. Para tal podemos 
         
 No entanto,se não for um fã de Counter Strike e tiver um comando USB à sua disposição, pode introduzir o seguinte comando ao invés do anterior:
 
-       rosrun teleop_twist_joy teleop_node /cmd_vel:=/d_coelho/differential_drive_controller/cmd_vel
+       rosrun teleop_twist_joy teleop_node /cmd_vel:=/<player_name>/differential_drive_controller/cmd_vel
        
 Se utilizar esta segunda via, certifique-se que tem o joy instalado, através do seguinte comando:
         
-        sudo apt install ros-<melodic>joy
+        sudo apt install ros-<ros-distro>joy
         
 
         
