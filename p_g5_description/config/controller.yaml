@@ -23,7 +23,7 @@ differential_drive_controller:
   base_frame_id: "/p_g5/base_footprint" #default: base_link                 !!!!should change for any name!!!!!
   odom_frame_id : "/p_g5/odom" # Name of frame to publish odometry in.    !!! using $(arg player_name)!!!!1
 
-  enable_odom_tf : True # Publish to TF directly or not
+  enable_odom_tf : False # Publish to TF directly or not Posse a odometria a falso por cauda de fazer o ex4
   publish_cmd : True # Publish the velocity command to be executed. It is to monitor the effect of limiters on the controller input.
   allow_multiple_cmd_vel_publishers : True # Setting this to true will allow more than one publisher on the input topic, ~/cmd_vel.
 
