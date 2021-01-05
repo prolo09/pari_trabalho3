@@ -12,7 +12,8 @@
 <!--  &lt;!&ndash; turtlebot3_teleop_key already has its own built in velocity smoother &ndash;&gt;-->
 <!--  <node pkg="turtlebot3_teleop" type="turtlebot3_teleop_key" name="turtlebot3_teleop_keyboard"  output="screen">-->
 <!--  </node>-->
-  <node ns="differential_drive_controller" pkg="p_g5_bringup" type="teleop_key.py" name="teleop_keyboard"  output="screen"/>
+<!--  <node ns="differential_drive_controller" pkg="p_g5_bringup" type="teleop_key.py" name="teleop_keyboard"  output="screen"/>-->
+ <node pkg="p_g5_bringup" type="teleop_key.py" name="teleop_keyboard"  output="screen"/>
 
   </group>
 </launch>

@@ -1,8 +1,8 @@
 <?xml version="1.0"?>
 <robot name="p_g5_gaz" xmlns:xacro="http://ros.org/wiki/xacro">
 
-<!--  <xacro:include filename="$(find p_g5_description)/urdf/ros_diff_drive.gazebo.xacro"/>-->
-  <xacro:include filename="$(find p_g5_description)/urdf/ros_control.gazebo.xacro"/>
+  <xacro:include filename="$(find p_g5_description)/urdf/ros_diff_drive.gazebo.xacro"/>
+<!--  <xacro:include filename="$(find p_g5_description)/urdf/ros_control.gazebo.xacro"/>-->
 
 
   <xacro:arg name="laser_visual"  default="false"/>
@@ -64,7 +64,7 @@
 
   </gazebo>
 
-  <!--<gazebo>
+  <gazebo>
     <plugin name="turtlebot3_waffle_pi_controller" filename="libgazebo_ros_diff_drive.so">
       <commandTopic>cmd_vel</commandTopic>
       <odometryTopic>odom</odometryTopic>
@@ -85,7 +85,7 @@
       <wheelTorque>10</wheelTorque>
       <rosDebugLevel>na</rosDebugLevel>
     </plugin>
-  </gazebo>-->
+  </gazebo>
 
   <gazebo>
     <plugin name="imu_plugin" filename="libgazebo_ros_imu.so">
