@@ -13,11 +13,6 @@ def moveT():
     goalGlobal.header.stamp=rospy.Time.now()
     goal_baselink=poseGoal.transform(goalGlobal, "/p_g5/base_link", rospy.Duration(1))
 
-#fazendo com o prof disse nao presisa de saber onde estou pola mesaguem odometria
-# def verOdomCall(msg):
-#     global p_x, p_y, theta
-#     p_x = msg.pose.pose.position.x
-#     p_y = msg.pose.pose.position.y
 #
 #____________
 
@@ -29,6 +24,11 @@ def moveT():
     trageto=Twist()
 
 
+#fazendo com o prof disse nao presisa de saber onde estou pola mesaguem odometria
+# def verOdomCall(msg):
+#     global p_x, p_y, theta
+#     p_x = msg.pose.pose.position.x
+#     p_y = msg.pose.pose.position.y
 
 
 
