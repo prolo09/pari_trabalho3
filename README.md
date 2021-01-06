@@ -82,6 +82,6 @@ Depois de configorar os topicos é so clicar no nomo Robot pode controlar com o 
 Através do gazibo podemos ter os valores e possível sabemos para cada robô qual a sua posposição através de (mensagens /gazebo/model_states) e transformá-la em mensagens tf de ROS e assim saber a posição de todos os robôs que se encontra no mundo gazebo.
 Na figura a seguir podemos ver que o topico wold e enviada para todos os robôs que estão no Gazibo.
 
-        
+ ![Real Image](docs/imaguem_mudul_state_tf_readme.png)
       
     
