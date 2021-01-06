@@ -1,0 +1,94 @@
+Index: .idea/libraries/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><component name=\"libraryTable\">\n  <library name=\"workspace\">\n    <CLASSES />\n    <JAVADOC />\n    <SOURCES />\n  </library>\n</component>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- .idea/libraries/workspace.xml	(revision 93e0b604e4cb9380c881fbd82d2342adfd5ff39d)
++++ .idea/libraries/workspace.xml	(date 1609959913196)
+@@ -1,7 +1,6 @@
+ <component name="libraryTable">
+   <library name="workspace">
+     <CLASSES />
+-    <JAVADOC />
+     <SOURCES />
+   </library>
+ </component>
+\ No newline at end of file
+Index: .idea/libraries/ROS.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><component name=\"libraryTable\">\n  <library name=\"ROS\">\n    <CLASSES>\n      <root url=\"file:///opt/ros/melodic\" />\n    </CLASSES>\n    <JAVADOC />\n    <SOURCES />\n  </library>\n</component>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- .idea/libraries/ROS.xml	(revision 93e0b604e4cb9380c881fbd82d2342adfd5ff39d)
++++ .idea/libraries/ROS.xml	(date 1609959913152)
+@@ -3,7 +3,6 @@
+     <CLASSES>
+       <root url="file:///opt/ros/melodic" />
+     </CLASSES>
+-    <JAVADOC />
+     <SOURCES />
+   </library>
+ </component>
+\ No newline at end of file
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<project version=\"4\">\n  <component name=\"ChangeListManager\">\n    <list default=\"true\" id=\"18d03bd5-c0e8-4d36-8c16-9cb4f7ab9e8f\" name=\"Default Changelist\" comment=\"primeiro controlador modar\">\n      <change beforePath=\"$PROJECT_DIR$/.idea/workspace.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/workspace.xml\" afterDir=\"false\" />\n    </list>\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\n  </component>\n  <component name=\"FileTemplateManagerImpl\">\n    <option name=\"RECENT_TEMPLATES\">\n      <list>\n        <option value=\"Python Script\" />\n      </list>\n    </option>\n  </component>\n  <component name=\"Git.Settings\">\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\n  </component>\n  <component name=\"ProjectId\" id=\"1lYLF3zTpbTXap63PUpQOqoPdvI\" />\n  <component name=\"ProjectLevelVcsManager\" settingsEditedManually=\"true\" />\n  <component name=\"ProjectViewState\">\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\n    <option name=\"showLibraryContents\" value=\"true\" />\n  </component>\n  <component name=\"PropertiesComponent\">\n    <property name=\"RunOnceActivity.OpenProjectViewOnStart\" value=\"true\" />\n    <property name=\"RunOnceActivity.ShowReadmeOnStart\" value=\"true\" />\n    <property name=\"WebServerToolWindowFactoryState\" value=\"false\" />\n    <property name=\"last_opened_file_path\" value=\"$PROJECT_DIR$\" />\n    <property name=\"settings.editor.selected.configurable\" value=\"project.propVCSSupport.Mappings\" />\n  </component>\n  <component name=\"RecentsManager\">\n    <key name=\"CopyFile.RECENT_KEYS\">\n      <recent name=\"$PROJECT_DIR$/p_g5_description/urdf\" />\n    </key>\n    <key name=\"MoveFile.RECENT_KEYS\">\n      <recent name=\"$PROJECT_DIR$/p_g5_description\" />\n      <recent name=\"$PROJECT_DIR$/p_g5_description/urdf/mesh\" />\n      <recent name=\"$PROJECT_DIR$/p_g5_description/urdf\" />\n    </key>\n  </component>\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"0\" CustomDictionaries=\"0\" DefaultDictionary=\"application-level\" UseSingleDictionary=\"true\" transferred=\"true\" />\n  <component name=\"TaskManager\">\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\n      <changelist id=\"0692f091-9745-4982-af04-fbfc717b93e2\" name=\"Default Changelist\" comment=\"\" />\n      <created>1607768971148</created>\n      <option name=\"number\" value=\"Default\" />\n      <option name=\"presentableId\" value=\"Default\" />\n      <updated>1607768971148</updated>\n      <workItem from=\"1607768975599\" duration=\"15948000\" />\n      <workItem from=\"1607979277748\" duration=\"4298000\" />\n      <workItem from=\"1608052234254\" duration=\"4746000\" />\n      <workItem from=\"1608058118773\" duration=\"2003000\" />\n      <workItem from=\"1608157205471\" duration=\"599000\" />\n      <workItem from=\"1609602634900\" duration=\"14212000\" />\n      <workItem from=\"1609669291703\" duration=\"523000\" />\n    </task>\n    <task id=\"LOCAL-00001\" summary=\"criacao dos packge e dos launch house\">\n      <created>1607770112454</created>\n      <option name=\"number\" value=\"00001\" />\n      <option name=\"presentableId\" value=\"LOCAL-00001\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1607770112454</updated>\n    </task>\n    <task id=\"LOCAL-00002\" summary=\"colocaçao a vermelho, antes de por as chamas\">\n      <created>1607777286585</created>\n      <option name=\"number\" value=\"00002\" />\n      <option name=\"presentableId\" value=\"LOCAL-00002\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1607777286585</updated>\n    </task>\n    <task id=\"LOCAL-00003\" summary=\"colocar a flames laterais\">\n      <created>1607798192656</created>\n      <option name=\"number\" value=\"00003\" />\n      <option name=\"presentableId\" value=\"LOCAL-00003\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1607798192656</updated>\n    </task>\n    <task id=\"LOCAL-00004\" summary=\"ajuste das chamas\">\n      <created>1607800872889</created>\n      <option name=\"number\" value=\"00004\" />\n      <option name=\"presentableId\" value=\"LOCAL-00004\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1607800872889</updated>\n    </task>\n    <task id=\"LOCAL-00005\" summary=\"finalizacao da chama left\">\n      <created>1607802607823</created>\n      <option name=\"number\" value=\"00005\" />\n      <option name=\"presentableId\" value=\"LOCAL-00005\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1607802607823</updated>\n    </task>\n    <task id=\"LOCAL-00006\" summary=\"finalizacao das 2 chamas\">\n      <created>1607803471327</created>\n      <option name=\"number\" value=\"00006\" />\n      <option name=\"presentableId\" value=\"LOCAL-00006\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1607803471327</updated>\n    </task>\n    <task id=\"LOCAL-00007\" summary=\"finalizacao das 2 chamas pequena correcoes\">\n      <created>1607804195355</created>\n      <option name=\"number\" value=\"00007\" />\n      <option name=\"presentableId\" value=\"LOCAL-00007\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1607804195355</updated>\n    </task>\n    <task id=\"LOCAL-00008\" summary=\"finalixacao do xacro.launch\">\n      <created>1607804805122</created>\n      <option name=\"number\" value=\"00008\" />\n      <option name=\"presentableId\" value=\"LOCAL-00008\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1607804805122</updated>\n    </task>\n    <task id=\"LOCAL-00009\" summary=\"primeiro controlador\">\n      <created>1609872741676</created>\n      <option name=\"number\" value=\"00009\" />\n      <option name=\"presentableId\" value=\"LOCAL-00009\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1609872741676</updated>\n    </task>\n    <option name=\"localTasksCounter\" value=\"10\" />\n    <servers />\n  </component>\n  <component name=\"TypeScriptGeneratedFilesManager\">\n    <option name=\"version\" value=\"3\" />\n  </component>\n  <component name=\"Vcs.Log.Tabs.Properties\">\n    <option name=\"TAB_STATES\">\n      <map>\n        <entry key=\"MAIN\">\n          <value>\n            <State />\n          </value>\n        </entry>\n      </map>\n    </option>\n    <option name=\"oldMeFiltersMigrated\" value=\"true\" />\n  </component>\n  <component name=\"VcsManagerConfiguration\">\n    <MESSAGE value=\"criacao dos packge e dos launch house\" />\n    <MESSAGE value=\"colocaçao a vermelho, antes de por as chamas\" />\n    <MESSAGE value=\"colocar a flames laterais\" />\n    <MESSAGE value=\"ajuste das chamas\" />\n    <MESSAGE value=\"finalizacao da chama left\" />\n    <MESSAGE value=\"finalizacao das 2 chamas\" />\n    <MESSAGE value=\"finalizacao das 2 chamas pequena correcoes\" />\n    <MESSAGE value=\"finalixacao do xacro.launch\" />\n    <MESSAGE value=\"primeiro controlador\" />\n    <option name=\"LAST_COMMIT_MESSAGE\" value=\"primeiro controlador\" />\n  </component>\n  <component name=\"com.intellij.coverage.CoverageDataManagerImpl\">\n    <SUITE FILE_PATH=\"coverage/pari_trabalho3$drive.coverage\" NAME=\"drive Coverage Results\" MODIFIED=\"1609858839207\" SOURCE_PROVIDER=\"com.intellij.coverage.DefaultCoverageFileProvider\" RUNNER=\"coverage.py\" COVERAGE_BY_TEST_ENABLED=\"true\" COVERAGE_TRACING_ENABLED=\"false\" WORKING_DIRECTORY=\"$PROJECT_DIR$/p_g5_core/src\" />\n  </component>\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- .idea/workspace.xml	(revision 93e0b604e4cb9380c881fbd82d2342adfd5ff39d)
++++ .idea/workspace.xml	(date 1609959913088)
+@@ -1,9 +1,7 @@
+ <?xml version="1.0" encoding="UTF-8"?>
+ <project version="4">
+   <component name="ChangeListManager">
+-    <list default="true" id="18d03bd5-c0e8-4d36-8c16-9cb4f7ab9e8f" name="Default Changelist" comment="primeiro controlador modar">
+-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+-    </list>
++    <list default="true" id="18d03bd5-c0e8-4d36-8c16-9cb4f7ab9e8f" name="Default Changelist" comment="primeiro controlador modar" />
+     <option name="SHOW_DIALOG" value="false" />
+     <option name="HIGHLIGHT_CONFLICTS" value="true" />
+     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+@@ -19,6 +17,7 @@
+   <component name="Git.Settings">
+     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+   </component>
++  <component name="JupyterTrust" id="406aa70f-24a3-4ef9-b4f3-e522e8269cea" />
+   <component name="ProjectId" id="1lYLF3zTpbTXap63PUpQOqoPdvI" />
+   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+   <component name="ProjectViewState">
+@@ -45,7 +44,7 @@
+   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+   <component name="TaskManager">
+     <task active="true" id="Default" summary="Default task">
+-      <changelist id="0692f091-9745-4982-af04-fbfc717b93e2" name="Default Changelist" comment="" />
++      <changelist id="18d03bd5-c0e8-4d36-8c16-9cb4f7ab9e8f" name="Default Changelist" comment="primeiro controlador modar" />
+       <created>1607768971148</created>
+       <option name="number" value="Default" />
+       <option name="presentableId" value="Default" />
+@@ -57,6 +56,7 @@
+       <workItem from="1608157205471" duration="599000" />
+       <workItem from="1609602634900" duration="14212000" />
+       <workItem from="1609669291703" duration="523000" />
++      <workItem from="1609959760851" duration="153000" />
+     </task>
+     <task id="LOCAL-00001" summary="criacao dos packge e dos launch house">
+       <created>1607770112454</created>
+@@ -150,6 +150,12 @@
+     <MESSAGE value="finalixacao do xacro.launch" />
+     <MESSAGE value="primeiro controlador" />
+     <option name="LAST_COMMIT_MESSAGE" value="primeiro controlador" />
++  </component>
++  <component name="WindowStateProjectService">
++    <state x="2301" y="1279" width="438" height="177" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1609959911898">
++      <screen x="1080" y="840" width="1920" height="1080" />
++    </state>
++    <state x="2301" y="1279" width="438" height="177" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/1080.840.1920.1080/0.0.1080.1888@1080.840.1920.1080" timestamp="1609959911898" />
+   </component>
+   <component name="com.intellij.coverage.CoverageDataManagerImpl">
+     <SUITE FILE_PATH="coverage/pari_trabalho3$drive.coverage" NAME="drive Coverage Results" MODIFIED="1609858839207" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/p_g5_core/src" />
