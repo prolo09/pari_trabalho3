@@ -1,9 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="18d03bd5-c0e8-4d36-8c16-9cb4f7ab9e8f" name="Default Changelist" comment="primeiro controlador modar">
-      <change afterPath="$PROJECT_DIR$/p_g5_core/src/model_states_to_tf.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/p_g5_bringup/launch/gmapping.launch" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/libraries/ROS.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/ROS.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -21,6 +40,7 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="JupyterTrust" id="406aa70f-24a3-4ef9-b4f3-e522e8269cea" />
   <component name="ProjectId" id="1lYLF3zTpbTXap63PUpQOqoPdvI" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -47,7 +67,7 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="18d03bd5-c0e8-4d36-8c16-9cb4f7ab9e8f" name="Default Changelist" comment="primeiro controlador modar" />
+      <changelist id="0692f091-9745-4982-af04-fbfc717b93e2" name="Default Changelist" comment="" />
       <created>1607768971148</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
@@ -59,10 +79,6 @@
       <workItem from="1608157205471" duration="599000" />
       <workItem from="1609602634900" duration="14212000" />
       <workItem from="1609669291703" duration="523000" />
-      <workItem from="1609880422288" duration="5136000" />
-      <workItem from="1609931164931" duration="6061000" />
-      <workItem from="1609946064180" duration="224000" />
-      <workItem from="1609946325303" duration="456000" />
     </task>
     <task id="LOCAL-00001" summary="criacao dos packge e dos launch house">
       <created>1607770112454</created>
