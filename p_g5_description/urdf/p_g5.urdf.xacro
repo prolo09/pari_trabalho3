@@ -173,7 +173,7 @@
       <geometry>
         <mesh filename="package://turtlebot3_description/meshes/sensors/lds.stl" scale="0.001 0.001 0.001"/>
       </geometry>
-      <material name="${scan_color}"/>
+      <material name="${player_color}"/>
     </visual>
 
     <collision>

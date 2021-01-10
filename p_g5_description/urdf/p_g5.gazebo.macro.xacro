@@ -117,7 +117,7 @@
   </gazebo>
 
   <gazebo reference="base_scan">
-    <material>Gazebo/${scan_color}</material>
+    <material>Gazebo/${player_color}</material>
     <sensor type="ray" name="lds_lfcd_sensor">
       <pose>0 0 0 0 0 0</pose>
       <visualize>$(arg laser_visual)</visualize>
@@ -157,8 +157,11 @@
       <camera>
           <horizontal_fov>1.085595</horizontal_fov>
           <image>
-              <width>640</width>
-              <height>480</height>
+<!--              <width>640</width>-->
+<!--              <height>480</height>-->
+
+             <width>1680</width>
+              <height>1050</height>
               <format>R8G8B8</format>
           </image>
           <clip>
