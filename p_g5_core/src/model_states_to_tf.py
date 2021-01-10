@@ -13,6 +13,7 @@ global t
 
 #__________________________________nota______________________________________
 #nao esquecer que o nome dos robos a intruduzir sao os nomes que esta na lista
+#atualiar da forma a ter os nomes aumaticos
 #____________________________________________________________________________
 
 
