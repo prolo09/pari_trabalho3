@@ -78,10 +78,17 @@ Depois de configorar os topicos é so clicar no nomo Robot pode controlar com o 
         
 #  gmapping 
 
-# nó model_states_to_tf
-Através do gazibo podemos ter os valores e possível sabemos para cada robô qual a sua posposição através de (mensagens /gazebo/model_states) e transformá-la em mensagens tf de ROS e assim saber a posição de todos os robôs que se encontra no mundo gazebo.
+# Nó model_states_to_tf
+Através do gazebo podemos ter os valores e possível sabemos para cada robô qual a sua posposição através de (mensagens /gazebo/model_states) e transformá-la em mensagens tf de ROS e assim saber a posição de todos os robôs que se encontra no mundo gazebo.
 Na figura a seguir podemos ver que o topico wold e enviada para todos os robôs que estão no Gazibo.
 
  ![Real Image](docs/imaguem_mudul_state_tf_readme.png)
       
     
+# Condução do Robot numa trajetória pré definida
+
+Após se lançar o mundo gazebo e se ter feito o spawn do robot como explicado anteriormente, basta usar este comando no terminal:
+
+    rosrun p_g5_core player.py
+
+Verá que o robot começa a andar numa trajetória circular.
