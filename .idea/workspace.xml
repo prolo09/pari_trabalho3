@@ -19,13 +19,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="18d03bd5-c0e8-4d36-8c16-9cb4f7ab9e8f" name="Default Changelist" comment="gmapping.launch">
-      <change afterPath="$PROJECT_DIR$/p_g5_bringup/launch/game_bringup.launch" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/p_g5_bringup/params/game.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/p_g5_core/src/model_states_to_tf.py" beforeDir="false" afterPath="$PROJECT_DIR$/p_g5_core/src/model_states_to_tf.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/p_g5_description/urdf/p_g5.gazebo.macro.xacro" beforeDir="false" afterPath="$PROJECT_DIR$/p_g5_description/urdf/p_g5.gazebo.macro.xacro" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/p_g5_description/urdf/p_g5.urdf.xacro" beforeDir="false" afterPath="$PROJECT_DIR$/p_g5_description/urdf/p_g5.urdf.xacro" afterDir="false" />
-    </list>
+    <list default="true" id="18d03bd5-c0e8-4d36-8c16-9cb4f7ab9e8f" name="Default Changelist" comment="alteracoes reuniao" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -167,7 +161,14 @@
       <option name="project" value="LOCAL" />
       <updated>1609960755618</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="alteracoes reuniao">
+      <created>1610316855189</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1610316855189</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -196,7 +197,8 @@
     <MESSAGE value="finalixacao do xacro.launch" />
     <MESSAGE value="primeiro controlador" />
     <MESSAGE value="gmapping.launch" />
-    <option name="LAST_COMMIT_MESSAGE" value="gmapping.launch" />
+    <MESSAGE value="alteracoes reuniao" />
+    <option name="LAST_COMMIT_MESSAGE" value="alteracoes reuniao" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/pari_trabalho3$drive.coverage" NAME="drive Coverage Results" MODIFIED="1609858839207" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/p_g5_core/src" />
