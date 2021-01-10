@@ -76,7 +76,12 @@ Depois de configorar os topicos é so clicar no nomo Robot pode controlar com o 
 
 ![Real Image](docs/rosapp.jpg) | ![Real Image](docs/demoRosApp.jpg)
         
-#  gmapping 
+#  Gmapping
+Uma funcionalidade interessante do robot e bastante atual nos dias de hoje, é o gmapping. Este consegue recolher 
+os dados do lidar do robot e formar um mapa apartir desses resultados. Neste exemplo é mostrado o Gazebo e o Rviz,
+no gazebo foram colocados alguns obstaculos para o robot, que como podemos ver, foram bem captados e mostrados 
+no Rviz.  
+![Real Image](docs/gmapping.png)
 
 # Nó model_states_to_tf
 Através do gazebo podemos ter os valores e possível sabemos para cada robô qual a sua posposição através de (mensagens /gazebo/model_states) e transformá-la em mensagens tf de ROS e assim saber a posição de todos os robôs que se encontra no mundo gazebo.
@@ -92,3 +97,58 @@ Após se lançar o mundo gazebo e se ter feito o spawn do robot como explicado a
     rosrun p_g5_core player.py
 
 Verá que o robot começa a andar numa trajetória circular.
+
+
+#  Contacts
+Nesta secção foi introduzido um sensor de contacto, que monitoriza os contactos que acontessem com o robo.
+Os resultados deste sensor podem ser escutados com o comando:
+    
+    rostopic echo /<nome_do_robo>/contact
+
+Apos executar este comando seremos presentiados com coisas deste genero:
+
+    header: 
+      seq: 3553
+      stamp: 
+        secs: 172
+        nsecs:  93000000
+      frame_id: "p_g5/Orange/world"
+    states: 
+      - 
+        info: "Debug:  i:(0/1)     my geom:mike::base_footprint::base_footprint_fixed_joint_lump__camera_link_collision_1\
+      \   other geom:p_g5::base_footprint::base_footprint_fixed_joint_lump__base_link_collision\
+      \         time:172.092000000\n"
+        collision1_name: "mike::base_footprint::base_footprint_fixed_joint_lump__camera_link_collision_1"
+        collision2_name: "p_g5::base_footprint::base_footprint_fixed_joint_lump__base_link_collision"
+        wrenches: 
+          - 
+            force: 
+              x: -0.346768995712
+              y: -0.177576272177
+              z: -0.123900535708
+            torque: 
+              x: 0.0131974778954
+              y: -0.0180573332274
+              z: -0.0110566288347
+        total_wrench: 
+          force: 
+            x: -0.346768995712
+            y: -0.177576272177
+            z: -0.123900535708
+          torque: 
+            x: 0.0131974778954
+            y: -0.0180573332274
+            z: -0.0110566288347
+        contact_positions: 
+          - 
+            x: -0.288034550622
+            y: -1.53446238264
+            z: 0.102770491624
+        contact_normals: 
+          - 
+            x: 0.995204062615
+            y: 0.0977690036159
+            z: 0.00317737115311
+        depths: [1.1095616439222431e-07]
+        
+Neste exemplo em específico podemos verificar a colisão entre o robot *p_g5* e o robot *mike*
