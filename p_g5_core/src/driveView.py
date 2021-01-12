@@ -100,9 +100,9 @@ def imagueCallBack(msg):
     twist.linear.x=0.8
 
     # !!!tem na mira presa
-    print(int(possicao_p))
-    print(int(possicao_h))
-    print(tela_width / 2)
+    # print(int(possicao_p))
+    # print(int(possicao_h))
+    # print(tela_width / 2)
 
 
     if int(possicao_h)!= tela_width/2 and int(possicao_p)==tela_width/2:
