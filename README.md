@@ -98,6 +98,10 @@ Após se lançar o mundo gazebo e se ter feito o spawn do robot como explicado a
 
 Verá que o robot começa a andar numa trajetória circular.
 
+# Game_bringup
+Atraves de deste ficheiro é possivel colocar mais que colocar mais de que um jogador,no mundo Gazelo, e em mais que uma equipa.
+O ficheiro faz tambem atraves do ficheiro game.yaml, a atribuição do nome e equipas, conforem assim atribuido.
+Atraves deste ficheiro é possivel escolher/configurar a possição inicial  
 
 #  Contacts
 Nesta secção foi introduzido um sensor de contacto, que monitoriza os contactos que acontessem com o robo.
