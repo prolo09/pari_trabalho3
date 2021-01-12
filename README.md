@@ -98,6 +98,18 @@ Após se lançar o mundo gazebo e se ter feito o spawn do robot como explicado a
 
 Verá que o robot começa a andar numa trajetória circular.
 
+# Seguimento e planeamento de movimento simples
+Através do driver_goal.py e possível comandar os robô através da posição das "setas", dando assim objetivos as robô para ele seguir, isto usando as goal do presentes no rviz.
+
+podemos ver na seguinte imagem o exemplo descrito anteriormente:
+
+
+
+Para ser possível realizar esta operação, insira na linha de comandos depois de inicializar o Gazibo, Rviz e o Spawn do robô, o seguinte:
+
+    rosrun p_g5_core driver_goal.py 
+
+
 # Game_bringup
 Através do game_bringup é possível fazer o spawn de vários robôs e colocá-lo em equipas conforme o seu nome através dos parâmetros predefinidos no ficheiro game.yaml, que podem em ser alterados consoante o pretendido.
 
