@@ -24,7 +24,7 @@ def callbackCoorGazibo(msg):
     msg_pose=msg.pose
 
 
-    lista_name=["p_g5","p_g5_red","p_g5_grenn","p_g5_blue","red1", "red2", "red3","blue1", "blue2", "blue3","green1", "green2", "green3"]
+    lista_name=["p_g5","p_g5_red","p_g5_green","p_g5_blue","red1", "red2", "red3","blue1", "blue2", "blue3","green1", "green2", "green3"]
 
 
     # para lidar com varios robos
