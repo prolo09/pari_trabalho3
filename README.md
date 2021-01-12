@@ -103,7 +103,7 @@ Através do driver_goal.py e possível comandar os robô através da posição d
 
 podemos ver na seguinte imagem o exemplo descrito anteriormente:
 
-
+ ![Real Image](docs/goal.png)
 
 Para ser possível realizar esta operação, insira na linha de comandos depois de inicializar o Gazibo, Rviz e o Spawn do robô, o seguinte:
 
