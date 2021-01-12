@@ -20,9 +20,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="18d03bd5-c0e8-4d36-8c16-9cb4f7ab9e8f" name="Default Changelist" comment="modarcor leser base">
-      <change afterPath="$PROJECT_DIR$/p_g5_core/src/driveView.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/ROS.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/ROS.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/p_g5_core/src/driveView.py" beforeDir="false" afterPath="$PROJECT_DIR$/p_g5_core/src/driveView.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -89,7 +88,7 @@
       <workItem from="1609960732534" duration="40000" />
       <workItem from="1610028280331" duration="105000" />
       <workItem from="1610363443628" duration="30801000" />
-      <workItem from="1610443446702" duration="8295000" />
+      <workItem from="1610443446702" duration="10306000" />
     </task>
     <task id="LOCAL-00001" summary="criacao dos packge e dos launch house">
       <created>1607770112454</created>
@@ -189,7 +188,14 @@
       <option name="project" value="LOCAL" />
       <updated>1610318284267</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="modarcor leser base">
+      <created>1610456541344</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1610456541344</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
