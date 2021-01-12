@@ -19,7 +19,11 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="18d03bd5-c0e8-4d36-8c16-9cb4f7ab9e8f" name="Default Changelist" comment="alteracoes reuniao" />
+    <list default="true" id="18d03bd5-c0e8-4d36-8c16-9cb4f7ab9e8f" name="Default Changelist" comment="modarcor leser base">
+      <change afterPath="$PROJECT_DIR$/p_g5_core/src/driveView.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/ROS.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/ROS.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -34,6 +38,14 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
   </component>
   <component name="JupyterTrust" id="406aa70f-24a3-4ef9-b4f3-e522e8269cea" />
   <component name="ProjectId" id="1lYLF3zTpbTXap63PUpQOqoPdvI" />
@@ -76,6 +88,8 @@
       <workItem from="1609669291703" duration="523000" />
       <workItem from="1609960732534" duration="40000" />
       <workItem from="1610028280331" duration="105000" />
+      <workItem from="1610363443628" duration="30801000" />
+      <workItem from="1610443446702" duration="8295000" />
     </task>
     <task id="LOCAL-00001" summary="criacao dos packge e dos launch house">
       <created>1607770112454</created>
@@ -168,7 +182,14 @@
       <option name="project" value="LOCAL" />
       <updated>1610316855189</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="modarcor leser base">
+      <created>1610318284267</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1610318284267</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -198,7 +219,8 @@
     <MESSAGE value="primeiro controlador" />
     <MESSAGE value="gmapping.launch" />
     <MESSAGE value="alteracoes reuniao" />
-    <option name="LAST_COMMIT_MESSAGE" value="alteracoes reuniao" />
+    <MESSAGE value="modarcor leser base" />
+    <option name="LAST_COMMIT_MESSAGE" value="modarcor leser base" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/pari_trabalho3$drive.coverage" NAME="drive Coverage Results" MODIFIED="1609858839207" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/p_g5_core/src" />
