@@ -313,8 +313,8 @@ def main():
                 else:
                     print(Fore.BLUE + state + ' for my next prey ' + Fore.RESET)
 
-                cv2.imshow('Image', cv_image)
-                key = cv2.waitKey(1)
+                # cv2.imshow('Image', cv_image)
+                # key = cv2.waitKey(1)
 
 
                 rate.sleep()

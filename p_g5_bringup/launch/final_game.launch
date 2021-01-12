@@ -1,0 +1,5 @@
+<launch>
+   <node pkg="p_g5_core" name="red1" type="driver_camera.py" />
+     <node pkg="p_g5_core" name="green1" type="driver_camera.py" />
+     <node pkg="p_g5_core" name="blue1" type="driver_camera.py" />
+</launch>

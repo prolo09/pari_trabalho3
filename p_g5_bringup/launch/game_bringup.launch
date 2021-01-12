@@ -6,8 +6,8 @@
 <!--       parametros robo red1-->
        <arg name="player_name" value="red1"/>
        <arg name="player_color" value="Red"/>
-       <arg name="x_pos" value="-5"/>
-       <arg name="y_pos" value="7"/>
+       <arg name="x_pos" value="-2.5"/>
+       <arg name="y_pos" value="0"/>
        <arg name="z_pos" value="3"/>
    </include>
 
@@ -17,7 +17,7 @@
        <arg name="player_name" value="green1"/>
        <arg name="player_color" value="Green"/>
        <arg name="x_pos" value="0"/>
-       <arg name="y_pos" value="5"/>
+       <arg name="y_pos" value="0"/>
          <arg name="z_pos" value="3"/>
     </include>
 
@@ -26,8 +26,8 @@
     <!--       parametros blue1-->
        <arg name="player_name" value="blue1"/>
        <arg name="player_color" value="Blue"/>
-       <arg name="x_pos" value="0"/>
-       <arg name="y_pos" value="10"/>
+       <arg name="x_pos" value="2.5"/>
+       <arg name="y_pos" value="-2"/>
           <arg name="z_pos" value="3"/>
     </include>
 </launch>
