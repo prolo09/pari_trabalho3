@@ -172,3 +172,9 @@ Apos executar este comando seremos presentiados com coisas deste genero:
         depths: [1.1095616439222431e-07]
         
 Neste exemplo em específico podemos verificar a colisão entre o robot *p_g5* e o robot *mike*
+
+#  Referee
+No fim de todos estes blocos conseguimos ainda implementar um arbito e criar
+um jogo com 3 equipas e 3 robos.
+
+[![Watch the video](https://teamhunt.org/wp-content/uploads/2019/05/Team-Hunt-logo-PMS_White.png)](https://streamable.com/gysru8)
