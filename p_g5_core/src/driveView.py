@@ -7,6 +7,7 @@ from sensor_msgs.msg import Image
 from sensor_msgs.msg import LaserScan
 import laser_geometry.laser_geometry as lg
 import numpy as np
+from random import randint
 
 
 
@@ -42,7 +43,7 @@ def imagueCallBack(msg):
     #prossecing the msg
 
 
-    # limites vermelho, azul        ????afinar pararmetsps
+    # limites vermelho, azul
     lim_inf_red=[0,  0, 50]
     lim_sup_red = [0, 0, 255]
 
@@ -90,73 +91,90 @@ def imagueCallBack(msg):
 
     #______________________ guiar vaiculo______________________-
 
-
-
+    # variavael que me informa se ha parede
+    olha_parede=HaParede()
+    print(olha_parede)
     #valores mais mais baixos direita
 
     #possicao do objeto na imaguem
     possicao_h=tela_width-centroids_h[1][0]
     possicao_p=tela_width-centroids_p[1][0]
 
-    #velocidade fixa liniar
-    twist.linear.x=0.8
 
-    # !!!tem na mira presa
-    # print(int(possicao_p))
-    # print(int(possicao_h))
-    # print(tela_width / 2)
+    if olha_parede==olha_parede != "parede":
 
+        #velocidade fixa liniar
+        twist.linear.x=0.8
 
-    if int(possicao_h)!= tela_width/2 and int(possicao_p)==tela_width/2:
-        print('cacar')
-
-        if possicao_h<tela_width/2:
-            twist.angular.z=0.7
-        elif int(possicao_h)==tela_width/2:
-            twist.angular.z = 0
-        else:
-            twist.angular.z = -0.7
+        # !!!tem na mira presa
+        # print(int(possicao_p))
+        # print(int(possicao_h))
+        # print(tela_width / 2)
 
 
-    #tem na mira presa e cacador
+        if int(possicao_h)!= tela_width/2 and int(possicao_p)==tela_width/2:
+            print('cacar')
 
-    if int(possicao_p) != tela_width / 2 and int(possicao_h)!=tela_width/2:
-        print('fugir do cacador e presa')
-        twist.linear.x = 0.3
-        if possicao_p < tela_width / 2:
-            twist.angular.z = -0.9
-        else:
-            twist.angular.z = 0.9
-
-        #spentiar
-        # cont+=1
-        #
-        #
-        # if cont<10:
-        #     if int(possicao_p) < tela_width / 2:
-        #         twist.angular.z = 0.5
-        #
-        #     else:
-        #         twist.angular.z = -0.5
-        # else:
-        #     if cont>20:
-        #         cont=0
-        #     if int(possicao_p) < tela_width / 2:
-        #         twist.angular.z = -0.5
-        #
-        #     else:
-        #         twist.angular.z = 0.5
+            if possicao_h<tela_width/2:
+                twist.angular.z=0.7
+            elif int(possicao_h)==tela_width/2:
+                twist.angular.z = 0
+            else:
+                twist.angular.z = -0.7
 
 
 
-    #tem na mira cacador
-    if int(possicao_p) != tela_width / 2 and int(possicao_h)==tela_width/2:
-        print('fugir')
-        twist.linear.x = 0.25
-        if possicao_p < tela_width / 2:
-            twist.angular.z = -0.9
-        else:
-            twist.angular.z = 0.9
+        #tem na mira presa e cacador
+
+        if int(possicao_p) != tela_width / 2 and int(possicao_h)!=tela_width/2:
+            print('fugir do cacador e presa')
+
+            twist.linear.x = 0.3
+            if possicao_p < tela_width / 2:
+                twist.angular.z = -0.9
+            else:
+                twist.angular.z = 0.9
+
+
+
+
+
+            #spentiar
+            # cont+=1
+            #
+            #
+            # if cont<10:
+            #     if int(possicao_p) < tela_width / 2:
+            #         twist.angular.z = 0.5
+            #
+            #     else:
+            #         twist.angular.z = -0.5
+            # else:
+            #     if cont>20:
+            #         cont=0
+            #     if int(possicao_p) < tela_width / 2:
+            #         twist.angular.z = -0.5
+            #
+            #     else:
+            #         twist.angular.z = 0.5
+
+
+
+        #tem na mira cacador
+        if int(possicao_p) != tela_width / 2 and int(possicao_h)==tela_width/2:
+            print('fugir')
+            twist.linear.x = 0.25
+            if possicao_p < tela_width / 2:
+                twist.angular.z = -0.9
+            else:
+                twist.angular.z = 0.9
+
+    else:
+
+        twist.angular.z = 0.9
+        twist.linear.x=-0.1
+
+
 
 
     #tem nao tem nada na mira
