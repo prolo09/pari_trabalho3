@@ -7,6 +7,7 @@
   <xacro:property name="player_color" value="$(arg player_color)"  />
   <xacro:property name="base_color" value="$(arg base_color)" />
   <xacro:property name="scan_color" value="$(arg scan_color)" />
+   <xacro:property name="orientacao" value="$(arg orientacao)" />
 
 <!--  <xacro:property name="player_name" default="p_g5" />-->
 <!--  <xacro:property name="player_color" default="Orange" />-->
@@ -21,7 +22,7 @@
   <joint name="base_joint" type="fixed">
     <parent link="base_footprint"/>
     <child link="base_link" />
-    <origin xyz="0 0 0.010" rpy="0 0 0"/>
+    <origin xyz="0 0 0.010" rpy="0 0 ${orientacao}"/>
   </joint>
 
   <link name="base_link">
