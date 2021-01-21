@@ -1,5 +1,9 @@
 <launch>
-   <node pkg="p_g5_core" name="red1" type="driver_camera.py" />
+   <node pkg="p_g5_core" name="red1" type="driver_camera_lidar.py" />
+    <node pkg="p_g5_core" name="red2" type="driver_camera_lidar.py" />
+
+
+
      <node pkg="p_g5_core" name="green1" type="driver_camera.py" />
      <node pkg="p_g5_core" name="blue1" type="driver_camera.py" />
 </launch>

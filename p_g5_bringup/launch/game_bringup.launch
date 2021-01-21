@@ -1,6 +1,13 @@
 <launch>
     <rosparam command="load" file="$(find p_g5_bringup)/params/game.yaml"/>
 
+
+    <arg name="time" default="60"/>
+
+    <param name="game_duration" value="$(arg time)" />
+
+
+
    <include file="$(find p_g5_bringup)/launch/spawn.launch">
 <!--_____________________team re________________-->
 <!--       parametros robo red1-->
@@ -10,6 +17,28 @@
        <arg name="y_pos" value="0"/>
        <arg name="z_pos" value="3"/>
    </include>
+
+
+
+
+   <include file="$(find p_g5_bringup)/launch/spawn.launch">
+<!--_____________________team re________________-->
+<!--       parametros robo red1-->
+       <arg name="player_name" value="red2"/>
+       <arg name="player_color" value="Red"/>
+       <arg name="x_pos" value="-2.5"/>
+       <arg name="y_pos" value="0"/>
+       <arg name="z_pos" value="3"/>
+   </include>
+
+
+
+
+
+
+
+
+
 
 <!--    ___________team Green___________-->
      <include file="$(find p_g5_bringup)/launch/spawn.launch">
@@ -21,10 +50,37 @@
          <arg name="z_pos" value="3"/>
     </include>
 
+
+
+<!--    ___________team Green___________-->
+     <include file="$(find p_g5_bringup)/launch/spawn.launch">
+    <!--       parametros verde1-->
+       <arg name="player_name" value="green2"/>
+       <arg name="player_color" value="Green"/>
+       <arg name="x_pos" value="0"/>
+       <arg name="y_pos" value="0"/>
+         <arg name="z_pos" value="3"/>
+    </include>
+
+
+
+
 <!--    ____________team Blue________________-->
       <include file="$(find p_g5_bringup)/launch/spawn.launch">
     <!--       parametros blue1-->
        <arg name="player_name" value="blue1"/>
+       <arg name="player_color" value="Blue"/>
+       <arg name="x_pos" value="2.5"/>
+       <arg name="y_pos" value="-2"/>
+          <arg name="z_pos" value="3"/>
+    </include>
+
+
+
+    <!--    ____________team Blue________________-->
+      <include file="$(find p_g5_bringup)/launch/spawn.launch">
+    <!--       parametros blue1-->
+       <arg name="player_name" value="blue2"/>
        <arg name="player_color" value="Blue"/>
        <arg name="x_pos" value="2.5"/>
        <arg name="y_pos" value="-2"/>
