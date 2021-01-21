@@ -7,7 +7,7 @@ from sensor_msgs.msg import Image
 from sensor_msgs.msg import LaserScan
 import laser_geometry.laser_geometry as lg
 import numpy as np
-from random import randint
+
 
 
 
@@ -26,7 +26,7 @@ def devolve_certruid(mask):
 
 
 def imagueCallBack(msg):
-    global pub, my_team,cont
+    global pub, my_team,cont, mantem_direcao
 
     twist=Twist()
     # rospy.loginfo(msg)
@@ -131,9 +131,11 @@ def imagueCallBack(msg):
 
             twist.linear.x = 0.3
             if possicao_p < tela_width / 2:
-                twist.angular.z = -0.9
+                mantem_direcao=-0.9
+                twist.angular.z = mantem_direcao
             else:
-                twist.angular.z = 0.9
+                mantem_direcao = 0.9
+                twist.angular.z =mantem_direcao
 
 
 
@@ -165,13 +167,16 @@ def imagueCallBack(msg):
             print('fugir')
             twist.linear.x = 0.25
             if possicao_p < tela_width / 2:
-                twist.angular.z = -0.9
+                mantem_direcao = -0.9
+                twist.angular.z = mantem_direcao
             else:
-                twist.angular.z = 0.9
+                mantem_direcao = 0.9
+                twist.angular.z = mantem_direcao
 
     else:
 
-        twist.angular.z = 0.9
+
+        twist.angular.z = mantem_direcao
         twist.linear.x=-0.1
 
 
@@ -221,9 +226,12 @@ def HaParede():
 
 
 def main():
-    global pub, my_team, cont
+    global pub, my_team, cont, mantem_direcao
 
     rospy.init_node('driverView', anonymous=False)
+
+    # defenir uma modo de virar para quando nao tem objetivos
+    mantem_direcao = 0.9
 
     # reconhece jogador , equipa, e objetivos
 
