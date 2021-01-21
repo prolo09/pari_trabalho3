@@ -187,9 +187,31 @@ Apos executar este comando seremos presentiados com coisas deste genero:
         
 Neste exemplo em específico podemos verificar a colisão entre o robot *p_g5* e o robot *mike*
 
-#  Referee
+#  Referee (arbitro desenvolvido por nos)
 No fim de todos estes blocos conseguimos ainda implementar um arbito e criar
 um jogo com 3 equipas e 3 robos.
 
 ###### Clique na imagem para ver um pequeno video demonstrativo
 [![Watch the video](https://teamhunt.org/wp-content/uploads/2019/05/Team-Hunt-logo-PMS_White.png)](https://streamable.com/gysru8)
+
+# jogo final 
+Como culminar deste projeto temos um jogo onde os diferentes robô competem entre si, com os diferentes ‘drivers’ desenvolvidos, usando o arbitro oficial desenvolvido pelo professor, numa arena.
+Para isto basta correr: 
+
+    roslaunch p_g5_bringup bringup_gazebo.launch
+
+Depois para posicionar e atribuir os robôs as diferentes equipas
+
+    roslaunch p_g5_bringup game_bringup.launch
+  
+Por fim de modo a implementar de modo automático os diferentes driver :
+
+    roslaunch p_g5_bringup final_game.launch 
+    
+exemplo do resultado final:
+
+![Real Image](docs/Pista.png)
+
+
+
+
