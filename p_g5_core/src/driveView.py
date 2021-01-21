@@ -4,6 +4,8 @@ from geometry_msgs.msg import Twist
 import cv2
 from cv_bridge import CvBridge
 from sensor_msgs.msg import Image
+from sensor_msgs.msg import LaserScan
+import laser_geometry.laser_geometry as lg
 import numpy as np
 
 
@@ -162,6 +164,43 @@ def imagueCallBack(msg):
     pub.publish(twist)
     k=cv2.waitKey(1)
 
+def scanCallBack(msg):
+    # lp=lg.LaserProjection()
+    # cartesianas=lp.projectLaser(msg)
+    # rospy.loginfo(cartesianas)
+
+    global n_obj_total
+
+    # saber se temos parede ou robo
+    lado_dir=msg.ranges[-45:-1]
+    n_inf_obj_dir=sum(i<1 for i in lado_dir)
+
+    lado_esq=msg.ranges[0:45]
+    n_inf_obj_esq = sum(i < 1 for i in lado_esq)
+
+    n_obj_total=n_inf_obj_esq+n_inf_obj_dir
+
+
+    # print(str(n_obj_total))
+    # print('zero:'+ str(msg.ranges[-60:-1]))
+    # rospy.loginfo(msg.ranges)
+
+def HaParede():
+    global n_obj_total
+
+    dado_lidar=None
+    if n_obj_total > 30:
+        # print("e parede")
+        dado_lidar="parede"
+    elif n_obj_total<30 and n_obj_total != 0:
+        # print("e robo")
+        dado_lidar = "robo"
+    elif n_obj_total==0:
+        # print("nada no lidar")
+        dado_lidar = "nada"
+
+    return dado_lidar
+
 
 def main():
     global pub, my_team, cont
@@ -203,6 +242,8 @@ def main():
 
     cont=0
     rospy.Subscriber(my_name+"/camera/rgb/image_raw", Image, imagueCallBack)
+
+    rospy.Subscriber(my_name+"/scan",LaserScan,scanCallBack)
 
 
 
