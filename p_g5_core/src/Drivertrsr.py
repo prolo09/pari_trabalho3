@@ -51,8 +51,8 @@ class TurtleBot:
         # init vel
         self.vel_x = 0.5
         self.vel_z = 0.5
-        self.hunt_vel_z_portion = 0.003
-        self.hunt_vel_x = 0.8
+        self.hunt_vel_z_portion = 0.002
+        self.hunt_vel_x = 1
         self.escape_vel_z = 1
         self.escape_vel_x = 1
         self.unlock_vel_z = 4
@@ -326,8 +326,8 @@ def main():
             turtle.attack = True
             # print("Hunting")
 
-        # elif turtle.using_vision and turtle.run_away:
-        #     turtle.go_away = True
+        elif turtle.using_vision and turtle.run_away:    # run away
+            turtle.go_away = True
 
         elif not turtle.using_vision:
             if turtle.unlock_front:
