@@ -117,7 +117,21 @@ Também é possível fazer a reparametrizar dos robôs, podendo alterar a sua co
 
 Para executar basta usar este comando no terminal:
  
-    p_g5_bringup game_bringup.launch 
+    roslaunch p_g5_bringup game_bringup.launch 
+    
+# Drive
+De modo que os robôs possam se mexer de forma autónoma, é implementado um ‘driver’ capaz de aceder as câmaras do robô e processar as imagens obtidas de forma a atacar outros robôs ou a desviar se dos caçadores, dependendo da cor de cada equipa.
+Para evitar que o robô colida contra as paredes foi também implementado um modo capaz de adquirir dados do lidar 360.º, sabendo assim a posição a outros robôs e a paredes, podendo assim se desviar dos mesmo.
+Foram criados 3 ‘drives’ diferentes desenvolvidos por cada um de nós de modo reagirem  de maneira diferente, tendo reações mais defensivas ou mais atacantes, conforme o programador o decidiu.
+Para correr este ‘driver’ escolha o que pretender e associa a um robô através de:
+
+    rosrun p_g5_core driveView.py __name:=[name_robo]
+    
+    rosrun p_g5_core Drivertrsr.py __name:=[name_robo]
+    
+    rosrun p_g5_core driver_camera_lidar.py __name:=[name_robo]
+    
+ex do resutado camara:
 
 #  Contacts
 Nesta secção foi introduzido um sensor de contacto, que monitoriza os contactos que acontessem com o robo.
