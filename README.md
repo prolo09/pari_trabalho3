@@ -1,5 +1,8 @@
 # Turtlebot3 Race
 ###### Trabalho 3 da unidade curricular de projecto de automação e robótica industrial (PARI) do curso de Engenharía Mecânica da Universidade de Aveiro
+###### Daniel Coelho
+###### Pedro Rolo
+###### Tiago Reis
 
 # Indice
  - [Instalação](#instalação)
